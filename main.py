@@ -3,6 +3,7 @@ from paddle import Paddle
 from scoreboard import Scoreboard
 import time
 
+scoreboard = Scoreboard()
 pad = Paddle(0, -250)
 
 screen = Screen()
