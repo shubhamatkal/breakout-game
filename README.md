@@ -1,2 +1,2 @@
-# breakout-game
+# breakout game
 TKinter GUI based breakout game , in py
