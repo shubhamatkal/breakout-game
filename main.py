@@ -29,7 +29,7 @@ level.load_panels(LEVEL)
 while game_is_on:
 
     screen.update()
-    time.sleep(0.01)
+    time.sleep(0.003)
     ball.move()
 
     if not level.panel_list:
