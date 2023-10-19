@@ -21,13 +21,12 @@ screen.title("Break Out")
 screen.tracer(0)
 
 screen.listen()
-screen.onkey(pad.move_left, "Left")
-screen.onkey(pad.move_right, "Right")
+screen.onkeypress(pad.move_left, "Left")
+screen.onkeypress(pad.move_right, "Right")
 
 game_is_on = True
 level.load_panels(LEVEL)
 while game_is_on:
-
     screen.update()
     time.sleep(0.003)
     ball.move()
