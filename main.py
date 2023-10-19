@@ -13,8 +13,8 @@ screen.title("Break Out")
 screen.tracer(0)
 
 screen.listen()
-screen.onkey(pad.move_left, "a")
-screen.onkey(pad.move_right, "d")
+screen.onkey(pad.move_left, "Left")
+screen.onkey(pad.move_right, "Right")
 
 game_is_on = True
 
