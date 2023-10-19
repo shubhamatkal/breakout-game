@@ -7,8 +7,8 @@ from ball import Ball
 import time
 
 #customizable constants
-#speed 1 IS normal , 0.5 is fast and 0.1 is faster while 1.5 is slow and 2 is slower
-SPEED = 1
+#speed 1 IS faster , 0.5 is fastest and 3 is slow is faster while 4 is slower and 5 is slowest
+SPEED = 2 #2 is preset
 LEVEL = 1
 
 scoreboard = Scoreboard()
