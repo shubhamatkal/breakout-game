@@ -6,6 +6,9 @@ from levels import Level
 from ball import Ball
 import time
 
+#customizable constants
+#speed 1 IS normal , 0.5 is fast and 0.1 is faster while 1.5 is slow and 2 is slower
+SPEED = 1
 LEVEL = 1
 
 scoreboard = Scoreboard()
@@ -28,7 +31,7 @@ game_is_on = True
 level.load_panels(LEVEL)
 while game_is_on:
     screen.update()
-    time.sleep(0.003)
+    time.sleep(0.003* SPEED)
     ball.move()
 
     if not level.panel_list:
