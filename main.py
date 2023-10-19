@@ -3,12 +3,14 @@ from paddle import Paddle
 from scoreboard import Scoreboard
 from lives import Lives
 from levels import Level
+from ball import Ball
 import time
 
 LEVEL = 1
 
 scoreboard = Scoreboard()
 pad = Paddle(0, -250)
+ball = Ball()
 lives = Lives()
 level = Level()
 
