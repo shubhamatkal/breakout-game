@@ -10,6 +10,9 @@ import time
 #speed 1 IS faster , 0.5 is fastest and 3 is slow is faster while 4 is slower and 5 is slowest
 SPEED = 2 #2 is preset
 LEVEL = 1
+def increase_speed(multiple):
+    global SPEED
+    SPEED *= 0.5
 
 scoreboard = Scoreboard()
 pad = Paddle(0, -250)
@@ -38,7 +41,9 @@ while game_is_on:
         scoreboard.new_level()
         ball.new_ball()
         LEVEL += 1
+        increase_speed(1)
         level.load_panels(LEVEL)
+
 
     # Detect Collision with panel
     for panel in level.panel_list:
